@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SDS | Системы антиобледенения</title>
+	<meta name="msapplication-TileColor" content="#AE775C;" />
+	<meta name="theme-color" content="#AE775C;" />
+	<link rel="apple-touch-icon" sizes="57x57" href="./favicon/favicon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="./favicon/favicon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="./favicon/favicon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="./favicon/favicon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="./favicon/favicon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="./favicon/favicon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="./favicon/favicon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="./favicon/favicon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="./favicon/favicon-180x180.png">
+	<link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="./favicon/favicon-192x192.png">
+	<link rel="shortcut icon" type="image/x-icon" href="./favicon/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="./favicon/favicon.ico">
+	<meta name="msapplication-TileImage" content="./favicon/favicon-144x144.png">
+	<meta name="msapplication-config" content="./favicon/browserconfig.xml">
+	<link rel="manifest" href="./favicon/manifest.json">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+	<!-- Swiper -->
+	<div class="swiper mySwiper">
+		<div class="container">
+			<header class="header">
+				<nav class="header__menu">
+					<ul class="header__nav">
+						<li class="header__link">
+							<a href='#'><img src="./img/logo.svg" alt="logo:sds"></a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__social">
+					<a class='header__social-tg' target='_blank' href='https://t.me/sds_group_ru'><img src="./img/telegram.svg"
+							alt="vk"></a>
+					<a class='header__social-phone' target='_blank' href='tel:74999999999'><img src="./img/phone-3.svg"
+							alt="phone"></a>
+				</div>
+		</div>
+		</header>
+		<div class="swiper-wrapper">
+			<div class="swiper-slide slide-1">
+				<div class="container">
+					<div class="hero">
+						<h1 class="hero__title">
+							Тепло <br> и безопасность<br> вашего дома
+						</h1>
+						<p class="hero__subtitle">Эффективные и умные решения для защиты вашего дома<br>от обледенения — надежно,
+							экологично и экономно</p>
+					</div>
+					<div class="hero__btn-group">
+						<button href='#' class="hero-btn">Получить предложение</button>
+						<a data-fancybox data-small-btn="true" class='hero-btn-play'
+							href="https://www.youtube.com/watch?v=rahRaVtEQaM">
+						</a>
+						<video width="200" height="320" controls id="myVideo" style="display:none;">
+							<source src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.mp4" type="video/mp4">
+							<source src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.webm" type="video/webm">
+							<source src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.ogv" type="video/ogg">
+						</video>
+					</div>
+					<div class="hero-special">
+						<div class="hero-icon"><img src="./img/hero-special.svg" alt="sun:icon"></div>
+
+						<!--  -->
+						<div class="hero-special-group">
+							<div class="hero-special-wrap">
+								<h4 class="hero-special-title">+5°C</h4>
+								<span class='hero-special-text'>Макс. температура</span>
+							</div>
+
+							<!--  -->
+							<div class="hero-special-wrap">
+								<h4 class="hero-special-title">-15°C</h4>
+								<span class='hero-special-text'>Мин. температура</span>
+							</div>
+
+							<!--  -->
+						</div>
+					</div>
+					<div class="tooltip-container tooltip-wrap-1">
+						<div class="tooltip">
+							<p>Скопление снега <br> и обледенение кровли<br> домов, карнизах, ендовах</p>
+							<button class="tooltip-button">Подробнее</button>
+						</div>
+						<div class="tooltip-icon">
+							<img src="./img/plus.svg" alt="plus:svg">
+						</div>
+					</div>
+					<div class="tooltip-container tooltip-wrap-2">
+						<div class="tooltip">
+							<p>Скопление снега <br> и обледенение кровли<br> домов, карнизах, ендовах</p>
+							<button class="tooltip-button">Подробнее</button>
+						</div>
+						<div class="tooltip-icon">
+							<img src="./img/plus.svg" alt="plus:svg">
+						</div>
+					</div>
+					<div class="tooltip-container tooltip-wrap-3">
+						<div class="tooltip">
+							<p>Перемерзание труб <br> водопроводов с питьевой<br> и канализационной водой</p>
+							<button class="tooltip-button">Подробнее</button>
+						</div>
+						<div class="tooltip-icon">
+							<img src="./img/plus.svg" alt="plus:svg">
+						</div>
+					</div>
+					<div class="tooltip-container tooltip-wrap-4">
+						<div class="tooltip">
+							<p>Образование наледи на лестницах и входных группах, пандусах</p>
+							<button class="tooltip-button">Подробнее</button>
+						</div>
+						<div class="tooltip-icon">
+							<img src="./img/plus.svg" alt="plus:svg">
+						</div>
+					</div>
+				</div>
+
+				<!--  -->
+			</div>
+			<div class="swiper-slide slide-2">
+				<div class="container">
+					<div class="hero">
+						<h1 class="hero__title">
+							Тепло <br> и безопасность<br> предприятия
+						</h1>
+						<p class="hero__subtitle">Эффективные и умные решения для защиты предприятия<br>от обледенения —
+							надежно,
+							экологично и экономно</p>
+					</div>
+					<div class="hero__btn-group">
+						<button href='#' class="hero-btn">Получить предложение</button>
+						<a data-fancybox data-small-btn="true" class='hero-btn-play'
+							href="https://www.youtube.com/watch?v=rahRaVtEQaM">
+						</a>
+						<video width="200" height="320" controls id="myVideo" style="display:none;">
+							<source src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.mp4" type="video/mp4">
+							<source src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.webm" type="video/webm">
+							<source src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.ogv" type="video/ogg">
+						</video>
+					</div>
+					<div class="tooltip-container tooltip-wrap-5">
+						<div class="tooltip tooltip-slide2">
+							<p>Обогрев ливневки</p>
+							<button class="tooltip-button tooltip-slide2-btn">Подробнее</button>
+						</div>
+						<div class="tooltip-icon">
+							<img src="./img/plus.svg" alt="plus:svg">
+						</div>
+					</div>
+					<div class="tooltip-container tooltip-wrap-6">
+						<div class="tooltip tooltip-slide2">
+							<p>Обогрев кровли</p>
+							<button class="tooltip-button tooltip-slide2-btn">Подробнее</button>
+						</div>
+						<div class="tooltip-icon">
+							<img src="./img/plus.svg" alt="plus:svg">
+						</div>
+					</div>
+					<div class="tooltip-container tooltip-wrap-7">
+						<div id='special-tooltip' class="tooltip tooltip-slide2">
+							<p>Обогрев<br>резервуаров</p>
+							<button id='special-btn' class="tooltip-button tooltip-slide2-btn">Подробнее</button>
+						</div>
+						<div class="tooltip-icon">
+							<img src="./img/plus.svg" alt="plus:svg">
+						</div>
+					</div>
+					<div class="tooltip-container tooltip-wrap-8">
+						<div id='special-tooltip' class="tooltip tooltip-slide2">
+							<p>Обогрев лестниц и ступенек</p>
+							<button id='special-btn' class="tooltip-button tooltip-slide2-btn">Подробнее</button>
+						</div>
+						<div class="tooltip-icon">
+							<img src="./img/plus.svg" alt="plus:svg">
+						</div>
+					</div>
+					<div class="tooltip-container tooltip-wrap-9">
+						<div class="tooltip tooltip-slide2">
+							<p>Обогрев ливневки</p>
+							<button class="tooltip-button tooltip-slide2-btn">Подробнее</button>
+						</div>
+						<div class="tooltip-icon">
+							<img src="./img/plus.svg" alt="plus:svg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="autoplay-progress">
+			<svg viewBox="0 0 48 48">
+				<circle cx="24" cy="24" r="20"></circle>
+			</svg>
+			<span></span>
+		</div>
+	</div>
+	<section class="sell">
+		<div class="container">
+			<h1 id="section1" class="section__title">Практичные и надежные <br> системы <span>антиобледенения</span></h1>
+			<div class="tabs">
+				<button class="tab active" data-category="zhk">В трубу</button>
+				<button class="tab" data-category="soc">На трубу</button>
+				<button class="tab" data-category="provider">Водостоки</button>
+				<button class="tab" data-category="industrial">Крыша</button>
+				<button class="tab" data-category="admin">Кровля</button>
+				<button class="tab" id='last-tab' data-category="plochadki">Площадки</button>
+			</div>
+			<div class="content" id="content">
+
+				<!-- Cards will be dynamically inserted here -->
+			</div>
+		</div>
+	</section>
+	<section class="questions">
+		<div class="container">
+			<h1 class="section__title">Остались <span>вопросы?</span></h1>
+			<div class="questions__wrap">
+				<div class="questions__wrap-info">
+					<div class="questions__container">
+						<div class="questions__wrap-info-email-title">
+							<span>Email</span>
+						</div>
+						<div class="questions__wrap-info-email-text">
+							<a href='mailto:projeсt@sds-group.ru'>projeсt@sds-group.ru</a>
+						</div>
+					</div>
+
+					<!--  -->
+					<div class="questions__container">
+						<div class="questions__wrap-info-email-title">
+							<span>Номер телефона</span>
+						</div>
+						<div class="questions__wrap-info-phone-text">
+							<a href='tel:74954594332'>+7 (495) 459 43-32</a>
+						</div>
+					</div>
+				</div>
+				<div class="questions__wrap-form">
+					<div class="question__wrap-title">Закажите обратный звонок</div>
+					<div class="question__wrap-subtitle">Перезвоним в ближайшее время</div>
+					<div class="question__wrap-input">
+						<form action="https://formspree.io/f/myzgypgl" method="POST">
+							<input required=required id='maskPhone' class='tel' name='phone' type="text" placeholder='Телефон'>
+							<button class="question__wrap-btn">Перезвонить</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="section4" class="faq">
+		<div class="container">
+			<div class="faq-container">
+				<h1 class="section__title">ОТВЕТЫ НА ЧАСТО<br>
+					<span>ЗАДАВАЕМЫЕ ВОПРОСЫ</span>
+				</h1>
+				<div class="faq-group">
+					<div class="faq-item">
+						<div class="faq-question">Что такое система антиобледенения и как она работает?</div>
+						<div class="faq-answer">
+							Система антиобледенения предотвращает образование льда и снега на крышах, водостоках и тротуарах,
+							используя нагревательные кабели. Эти кабели прогревают поверхности, предотвращая накопление снега и льда,
+							что уменьшает риск повреждений и повышает безопасность.
+						</div>
+					</div>
+					<div class="faq-item">
+						<div class="faq-question">Сколько электроэнергии потребляет система?</div>
+						<div class="faq-answer">Потребление электроэнергии зависит от нескольких факторов:
+							<li>Мощность греющих кабелей: Обычно варьируется от 10 до 30 Вт на метр</li>
+							<li>Площадь покрытия: Чем больше площадь, тем больше будет потребление.</li>
+							<li>Время работы: Система может работать только в холодный период, что также влияет на общий расход.</li>
+							<br>
+							<p>В среднем, система может потреблять от нескольких сотен до нескольких тысяч ватт в час в зависимости от
+								вышеуказанных факторов.
+							</p>
+						</div>
+					</div>
+					<div class="faq-item">
+						<div class="faq-question">Насколько безопасны системы антиобледенения?</div>
+						<div class="faq-answer">Системы антиобледенения, как правило, безопасны при правильной установке и
+							эксплуатации. Основные аспекты безопасности:
+							<li>Электрическая безопасность: Необходимо соблюдать правила установки и использовать сертифицированные
+								компоненты.</li>
+							<li>Предотвращение травм: Снижение риска падений из-за обледенения делает эти системы полезными для
+								безопасности.
+							</li>
+							<li>Защита от перегрева: Современные системы имеют встроенные защитные механизмы (термостаты,
+								предохранители), которые предотвращают перегрев.
+							</li>
+						</div>
+					</div>
+					<div class="faq-item">
+						<div class="faq-question">Как обслуживать систему антиобледенения?
+						</div>
+						<div class="faq-answer">Обслуживание системы включает:
+							<li>Регулярная проверка: Осмотр кабелей и соединений на наличие повреждений. </li>
+							<li>Очистка: Удаление мусора с поверхности, где установлены греющие кабели.</li>
+							<li>Тестирование: Проверка работы системы перед началом холодного сезона.</li>
+							<li>Проверка датчиков: Убедитесь, что датчики работают корректно.</li>
+						</div>
+					</div>
+					<div class="faq-item">
+						<div class="faq-question">Можно ли установить систему антиобледенения самостоятельно?
+						</div>
+						<div class="faq-answer">Установка системы антиобледенения возможна для опытных домашних мастеров, но важно
+							учитывать следующие моменты:
+							<li>Знание электротехники: Необходимы навыки работы с электрическими системами.</li>
+							<li>Соблюдение норм: Необходимо следовать местным строительным нормам и правилам.</li>
+							<li>Рекомендации производителей: Важно ознакомиться с инструкциями по установке конкретной системы.</li>
+							<li>Проверка датчиков: Убедитесь, что датчики работают корректно.</li>
+							<br>
+							<p>Если у вас нет опыта в установке электрических систем, лучше обратиться к нам, в компанию SDS для
+								обеспечения безопасности и эффективности работы системы.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Модальное окно -->
+	<form action="https://formspree.io/f/mldrelro" method="POST">
+		<div class="modal">
+			<div class="modal-content">
+				<a class="close-button"><img src="img/close.svg" alt="close"></a>
+				<h2>Заявка на получения предложения</h2>
+				<form>
+					<div class="input-group">
+						<label>
+							<span class="icon"><img src="img/user.svg" alt="user"></span>
+							<input required='required' type="text" name='name' placeholder="Введите ФИО">
+						</label>
+					</div>
+					<div class="input-group">
+						<label>
+							<span class="icon"><img src="img/phone-2.svg" alt="phone"></span>
+							<input required='required' id='maskPhone' name='phone' class='tel' type="text"
+								placeholder="+7 (___) ___-__-__">
+						</label>
+					</div>
+					<div class="input-group">
+						<label>
+							<span class="icon"><img src="img/email.svg" alt="email"></span>
+							<input required='required' type="email" name='email' placeholder="Эллектронная почта">
+						</label>
+					</div>
+					<div class="checkbox-group">
+						<span>Я согласен на обработку<br> <a target='_blank'
+								href='https://www.sds-group.ru/protection-personal-information/'>персональных данных</a></span>
+						<label class="checkbox">
+							<input required='required' name='checkbox' type="checkbox" />
+							<svg viewBox="0 0 21 18">
+								<symbol id="tick-path" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg">
+									<path d="M5.22003 7.26C5.72003 7.76 7.57 9.7 8.67 11.45C12.2 6.05 15.65 3.5 19.19 1.69" fill="none"
+										stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" />
+								</symbol>
+								<defs>
+									<mask id="tick">
+										<use class="tick mask" href="#tick-path" />
+									</mask>
+								</defs>
+								<use class="tick" href="#tick-path" stroke="currentColor" />
+								<path fill="white" mask="url(#tick)"
+									d="M18 9C18 10.4464 17.9036 11.8929 17.7589 13.1464C17.5179 15.6054 15.6054 17.5179 13.1625 17.7589C11.8929 17.9036 10.4464 18 9 18C7.55357 18 6.10714 17.9036 4.85357 17.7589C2.39464 17.5179 0.498214 15.6054 0.241071 13.1464C0.0964286 11.8929 0 10.4464 0 9C0 7.55357 0.0964286 6.10714 0.241071 4.8375C0.498214 2.39464 2.39464 0.482143 4.85357 0.241071C6.10714 0.0964286 7.55357 0 9 0C10.4464 0 11.8929 0.0964286 13.1625 0.241071C15.6054 0.482143 17.5179 2.39464 17.7589 4.8375C17.9036 6.10714 18 7.55357 18 9Z" />
+							</svg>
+							<svg class="lines" viewBox="0 0 11 11">
+								<path d="M5.88086 5.89441L9.53504 4.26746" />
+								<path d="M5.5274 8.78838L9.45391 9.55161" />
+								<path d="M3.49371 4.22065L5.55387 0.79198" />
+							</svg>
+						</label>
+					</div>
+					<button class='btn-form' type="submit">ОТПРАВИТЬ</button>
+				</form>
+				<p class="note">После подачи заявки с вами свяжется менеджер компании SDS</p>
+			</div>
+		</div>
+	</form>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+	<script src='https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js'></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src='js/counter-timer.js'></script>
+	<script src='js/tabs.js'></script>
+	<script src='js/faq.js'></script>
+	<script src='js/tooltip.js'></script>
+	<script src='js/maskphone.js'></script>
+	<script src='js/modal.js'></script>
+	<script src='js/smooth-scroll.js'></script>
+	<script src='js/video-modal.js'></script>
+</body>
+
+</html>
