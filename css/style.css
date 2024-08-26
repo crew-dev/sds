@@ -139,6 +139,12 @@ legend {
 }
 
 @font-face {
+	font-family: 'SFProDisplay-Medium';
+	src: url(../fonts/SFProDispolay-Medium.woff2) format('woff2');
+	font-weight: 500;
+}
+
+@font-face {
 	font-family: 'SFProDisplay-Semibold';
 	src: url(../fonts/SFProDisplay-Semibold.woff2) format('woff2');
 	font-weight: 600;
@@ -147,12 +153,6 @@ legend {
 @font-face {
 	font-family: 'SFProDisplay-Bold';
 	src: url(../fonts/SFProDisplay-Bold.woff2) format('woff2');
-	font-weight: 700;
-}
-
-@font-face {
-	font-family: 'GothamPro-Bold';
-	src: url(../fonts/GothamPro-Bold.woff2) format('woff2');
 	font-weight: 700;
 }
 
@@ -236,7 +236,7 @@ body {
 }
 
 .slide-1 {
-	background: url('../img/House.webp');
+	background: url('../img/House2.png');
 	height: 1100px;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -311,13 +311,11 @@ body {
 }
 
 .autoplay-progress {
-	left: 18px !important;
-	right: 0px !important;
 	font-family: 'Exo2-Medium' !important;
 }
 
 .hero {
-	margin-top: 50vh;
+	margin-top: 53vh;
 }
 
 .hero__title {
@@ -342,18 +340,18 @@ body {
 }
 
 .tooltip-wrap-2 {
-	top: 26vh;
-	left: 19vw;
+	top: 67vh;
+	left: 55vw;
 }
 
 .tooltip-wrap-3 {
-	top: 40vh;
-	left: 40vw;
+	top: 82vh;
+	left: 43vw;
 }
 
 .tooltip-wrap-4 {
-	top: 79vh;
-	left: 70vw;
+	top: 85vh;
+	left: 85vw;
 }
 
 .tooltip-wrap-5 {
@@ -381,30 +379,30 @@ body {
 	left: 82vw;
 }
 
+
 .tooltip {
 	position: absolute;
-	left: -220px;
+	left: -232px;
 	top: -110px;
 	z-index: 999;
-	background-color: rgba(0, 0, 0, 0.75);
 	color: white;
-	padding: 15px;
+	padding: 18px;
+	padding-bottom: 20px;
 	border-radius: 10px;
-	max-width: 250px;
+	max-width: 255px;
 	display: none;
 	z-index: 1;
-	width: 350px;
-	height: 156px;
-	background: rgba(0, 0, 0, 0.702);
+	padding-right: 30px;
+	height: auto;
+	background: rgba(0, 0, 0, 0.809);
 	border: 1px solid rgba(255, 255, 255, 0.25);
-	border-radius: 135px 135px 50px 135px;
+	border-radius: 120px 120px 40px 120px;
 }
 
 #special-tooltip {
-	width: 200px;
-	height: 130px;
-	left: -170px;
-	top: -90px;
+	top: -120px;
+	width: auto;
+	height: auto;
 }
 
 #special-tooltip p {
@@ -412,28 +410,21 @@ body {
 }
 
 #special-btn {
-	margin-top: 55px !important;
 	margin-left: 15px !important;
 }
 
 .tooltip-slide2 {
-	width: 180px;
-	height: 110px;
-	left: -150px;
-	top: -68px;
-}
-
-.tooltip-slide2-btn {
-	margin-top: 35px !important;
-	margin-left: 10px !important;
+	width: auto;
+	height: auto;
+	left: -230px;
+	top: -110px;
 }
 
 .tooltip-slide2 p {
-	margin-left: 10px !important;
+	margin-left: 20px !important;
 }
 
 .tooltip p {
-	position: absolute;
 	font-family: 'SFProDisplay-Medium';
 	font-style: normal;
 	font-weight: 500;
@@ -446,7 +437,7 @@ body {
 }
 
 .tooltip-button {
-	margin-top: 80px;
+	margin-top: 12px;
 	background-color: #38A253;
 	font-family: 'SFProDisplay-Bold';
 	font-weight: 700;
@@ -471,7 +462,7 @@ body {
 	background: url('../img/btn.svg');
 	width: 300px;
 	height: 96px;
-	font-family: 'GothamPro-Bold';
+	font-family: 'SFProDisplay-Bold';
 	font-weight: 700;
 	color: var(--white);
 	line-height: 136%;
@@ -501,90 +492,6 @@ body {
 
 .hero-btn-play:hover {
 	transform: scale(0.97);
-}
-
-.hero-special {
-	position: absolute;
-	width: 250px;
-	right: 0;
-	bottom: 0;
-	height: 254px;
-	background: linear-gradient(180deg, #38A554 0%, #298F43 100%);
-	border-radius: 27.962px 0px 0px 27.962px;
-}
-
-.hero-icon {
-	position: absolute;
-	margin-top: -30px;
-	margin-left: 35px;
-}
-
-.hero-special-group {
-	margin: 35px 50px 30px 35px;
-	text-align: left;
-}
-
-.hero-special-title {
-	font-family: 'SFProDisplay-Bold';
-	font-weight: 700;
-	font-size: 50px;
-	line-height: 115%;
-	letter-spacing: -0.01em;
-	color: var(--white);
-}
-
-.hero-special-text {
-	font-family: 'SFProDisplay-Regular';
-	font-style: normal;
-	font-weight: 300;
-	font-size: 20px;
-	letter-spacing: -0.01em;
-	color: var(--white);
-	opacity: 0.5;
-	text-wrap: nowrap;
-}
-
-.hero-special-wrap:nth-child(1) {
-	margin-top: 0px;
-}
-
-.hero-special-wrap {
-	margin-top: 20px;
-}
-
-
-/* banner */
-.banner {
-	margin-top: 50px;
-}
-
-.banner__info {
-	background: url(../img/banner.png);
-	transform: skew(348deg, 360deg);
-	border-radius: 60px;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 286px;
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-.banner__info>p {
-	font-size: 33px;
-	line-height: 147%;
-	font-family: 'GothamPro-Medium';
-	max-width: 828px;
-	text-align: center;
-	color: var(--white);
-}
-
-.banner__scroll {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 55px;
 }
 
 .section__title {
@@ -655,11 +562,25 @@ body {
 }
 
 .tooltip-icon {
-	transition: ease-in-out 0.2s;
+	transition: ease 0.3s;
 }
 
 .tooltip-icon:hover {
-	transform: scale(0.92);
+	transform: scale(1.07);
+}
+
+.tooltip-icon .tooltip-image {
+	position: absolute;
+	top: 100%;
+	left: 105%;
+	transform: translateX(-70%);
+	margin-top: -210px;
+	z-index: 10;
+	display: none;
+}
+
+.tooltip-icon:hover .tooltip-image {
+	display: block;
 }
 
 .card-btn {
@@ -697,7 +618,7 @@ body {
 
 .card-description li {
 	margin-top: 15px;
-	max-width: 300px;
+	max-width: auto;
 }
 
 .card-description li>span {
@@ -728,7 +649,7 @@ body {
 	margin: 0px auto;
 	text-align: center;
 	margin-top: 10px;
-	font-family: 'GothamPro-Medium';
+	font-family: 'SFProDisplay-Medium';
 	font-weight: 500;
 	font-size: 18px;
 	color: var(--black);
@@ -854,7 +775,7 @@ body {
 .program__card-li {
 	list-style-type: circle;
 	margin-left: 85px;
-	font-family: 'GothamPro-Regular';
+	font-family: 'SFProDisplay-Medium';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 24px;
@@ -947,6 +868,7 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: flex;
+	height: 176px;
 	flex-direction: column;
 }
 
@@ -999,7 +921,7 @@ body {
 	font-size: 30px;
 	line-height: 148.4%;
 	text-align: center;
-	font-family: 'GothamPro-Medium';
+	font-family: 'SFProDisplay-Medium';
 }
 
 .questions__wrap-form {
@@ -1045,14 +967,14 @@ body {
 	justify-content: center;
 	align-items: center;
 	margin-top: -58px;
-	padding: 21px 35px;
+	padding: 17.5px 35px;
 	background: var(--accent);
 	box-shadow: 0px 0px 90px rgba(170, 170, 170, 0.25);
 	box-shadow: 0px 0px 90px color(display-p3 0.667 0.667 0.667 / 0.25);
 	border-radius: 12px;
 	color: var(--white);
 	position: absolute;
-	font-family: 'GothamPro-Bold';
+	font-family: 'SFProDisplay-Bold';
 	right: 0;
 	transition: ease 0.2s;
 }
