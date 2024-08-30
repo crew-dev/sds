@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	const categories = {
 		zhk: [
 			{
-				title: '<a target="_blank" href="https://www.sds-group.ru/catalog/elektrotehnika-2341/">Комплекты</a>',
+				title: '<a target="_blank" href="">Комплекты</a>',
 				image2: '../img/line-card.svg',
 				description:
 					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-10htm2-ct-v-trubu-10m-100vt-rexant-10700/">Артикул: </a><span>51-0605</span><br>' +
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					'<button data-fancybox="gallery" href="img/scheme.png" class="card-btn">Показать схему</a>'
 			},
 			{
-				title: '<a target="_blank" href="https://www.sds-group.ru/catalog/elektrotehnika-2341/">Бухты</a>',
+				title: '<a target="_blank" href="">Бухты</a>',
 				image2: '../img/line-card.svg',
 				description:
 					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-10htm2-ct-pischevoy-10vt-m-buhta-100m-rexant-13480/">Артикул: </a><span>51-0632</span><br>' +
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 			},
 			{
-				title: '<a target="_blank" href="https://www.sds-group.ru/catalog/elektrotehnika-2341/">Мини-бухты</a>',
+				title: '<a target="_blank" href="">Мини-бухты</a>',
 				image2: '../img/line-card.svg',
 				description:
 					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-10htm2-ct-v-trubu-10m-100vt-rexant-10700/">Артикул: </a><span>51-0605</span><br>' +
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		],
 		soc: [
 			{
-				title: '<a target="_blank" href="https://www.sds-group.ru/catalog/elektrotehnika-2341/">Комплекты</a>',
+				title: '<a target="_blank" href="">Комплекты</a>',
 				image2: '../img/line-card.svg',
 				description:
 					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-15msr-pb-na-trubu-10m-150vt-rexant-11997/">Артикул: </a><span>51-0620</span><br>' +
@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					'<button data-fancybox="gallery" href="img/scheme.png" class="card-btn">Показать схему</a>'
 			},
 			{
-				title: '<a target="_blank" href="https://www.sds-group.ru/catalog/elektrotehnika-2341/">Бухты</a>',
+				title: '<a target="_blank" href="">Бухты</a>',
 				image2: '../img/line-card.svg',
 				description:
 					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-nagrevatelniy-samoreguliruyuschiysya-srl16-2-neekranirovanniy-16vt-m-0-88mm2-105m-300m-rexant-30975/">Артикул: </a><span>51-0274</span><br>' +
@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				// 
 			},
 			{
-				title: '<a target="_blank" href="https://www.sds-group.ru/catalog/elektrotehnika-2341/">Мини-бухты</a>',
+				title: '<a target="_blank" href="">Мини-бухты</a>',
 				image2: '../img/line-card.svg',
 				description:
 					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-srl16-2cr-ekranirovanniy-16vt-m-100m-rexant-20260/">Артикул: </a><span>51-0204</span><br>' +
@@ -168,7 +168,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		],
 		provider: [
 			{
-				title: '<a target="_blank" href="https://www.sds-group.ru/catalog/elektrotehnika-2341/">Комплекты</a>',
+				title: '<a target="_blank" href="">Комплекты</a>',
 				image2: '../img/line-card.svg',
 				description:
 					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-power-line-30srl-2cr-10m-300vt-rexant-17576/">Артикул: </a><span>51-0657</span><br>' +
@@ -212,7 +212,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				//
 			},
 			{
-				title: '<a target="_blank" href="https://www.sds-group.ru/catalog/elektrotehnika-2341/">Бухты</a>',
+				title: '<a target="_blank" href="">Бухты</a>',
 				image2: '../img/line-card.svg',
 				description:
 					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-dlya-trub-vodostokov-krish-30kns-2lp-el-65-85-30vt-m-uv-200m-ekranirovanniy-rexant-28752/">Артикул: </a><span>51-0254</span><br>' +
@@ -235,7 +235,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		// 
 		industrial: [
 			{
-				title: '<a target="_blank" href="https://www.sds-group.ru/catalog/elektrotehnika-2341/">Комплекты</a>',
+				title: '<a target="_blank" href="">Комплекты</a>',
 				image2: '../img/line-card.svg',
 				description:
 					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-power-line-30srl-2cr-10m-300vt-rexant-17576/">Артикул: </a><span>51-0657</span><br>' +
@@ -279,7 +279,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				//
 			},
 			{
-				title: '<a target="_blank" href="https://www.sds-group.ru/catalog/elektrotehnika-2341/">Бухты</a>',
+				title: '<a target="_blank" href="">Бухты</a>',
 				image2: '../img/line-card.svg',
 				description:
 					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-dlya-trub-vodostokov-krish-30kns-2lp-el-65-85-30vt-m-uv-200m-ekranirovanniy-rexant-28752/">Артикул: </a><span>51-0254</span><br>' +
@@ -302,7 +302,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		// 
 		admin: [
 			{
-				title: '<a target="_blank" href="https://www.sds-group.ru/catalog/elektrotehnika-2341/">Комплекты</a>',
+				title: '<a target="_blank" href="">Комплекты</a>',
 				image2: '../img/line-card.svg',
 				description:
 					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-dlya-obogreva-krovli-vodostokov-ploschadok-stupeney-grk-30-1080-36-36m-rexant-28601/">Артикул: </a><span>51-0065</span><br>' +
@@ -350,7 +350,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		],
 		plochadki: [
 			{
-				title: '<a target="_blank" href="https://www.sds-group.ru/catalog/elektrotehnika-2341/">Комплекты</a>',
+				title: '<a target="_blank" href="">Комплекты</a>',
 				image2: '../img/line-card.svg',
 				description:
 					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-dlya-progreva-betona-20vt-m-60m-rexant-29313/">Артикул: </a><span>51-0093</span><br>' +
