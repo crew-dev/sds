@@ -337,8 +337,8 @@ body {
 }
 
 .tooltip-wrap-3 {
-	top: 82vh;
-	left: 43vw;
+	top: 66vh;
+	left: 68vw;
 }
 
 .tooltip-wrap-4 {
@@ -861,7 +861,7 @@ body {
 	background-repeat: no-repeat;
 	background-size: contain;
 	display: flex;
-	height: 175px;
+	height: 192px;
 	flex-direction: column;
 }
 

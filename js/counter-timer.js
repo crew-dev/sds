@@ -1,10 +1,7 @@
 var swiper = new Swiper(".mySwiper", {
 	spaceBetween: 30,
 	centeredSlides: true,
-	autoplay: {
-		delay: 12000,
-		disableOnInteraction: false
-	},
+	loop: true, // Добавили loop
 	navigation: {
 		nextEl: '.custom-next', // Используем кастомную стрелку
 		prevEl: ".custom-prev"
