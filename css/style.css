@@ -236,7 +236,7 @@ body {
 }
 
 .slide-1 {
-	background: url('../img/House2.png');
+	background: url('../img/House2.webp');
 	height: 1100px;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -555,6 +555,7 @@ body {
 
 .tooltip-icon {
 	transition: ease 0.3s;
+	cursor: pointer;
 }
 
 .tooltip-icon:hover {
@@ -1307,8 +1308,95 @@ h2 {
 	}
 }
 
+/* custom arrow swiper */
+.custom-next {
+	width: 40px;
+	/* ширина кнопки */
+	height: 40px;
+	/* высота кнопки */
+	background-color: #333;
+	/* цвет фона кнопки */
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+	cursor: pointer;
+	z-index: 10;
+	border-radius: 50%;
+	/* если нужна круглая кнопка */
+}
+
+.custom-next::before {
+	content: '';
+	border: solid white;
+	border-width: 0 2px 2px 0;
+	display: inline-block;
+	padding: 6px;
+	transform: rotate(-45deg);
+	position: absolute;
+	top: 50%;
+	left: 46%;
+	transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.custom-next:hover {
+	background-color: #555;
+}
+
+.custom-prev {
+	width: 40px;
+	height: 40px;
+	background-color: #333;
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	transform: translateY(-50%);
+	cursor: pointer;
+	z-index: 10;
+	border-radius: 50%;
+}
+
+.custom-prev::before {
+	content: '';
+	border: solid white;
+	border-width: 0 2px 2px 0;
+	display: inline-block;
+	padding: 6px;
+	transform: rotate(135deg);
+	position: absolute;
+	top: 50%;
+	left: 56%;
+	transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.custom-prev:hover {
+	background-color: #555;
+	/* изменение цвета при наведении */
+}
+
+
+/*  */
+
 @keyframes check {
 	100% {
 		stroke-dashoffset: 4.5px;
+	}
+}
+
+@media (max-height: 800px) {
+	.hero {
+		margin-top: 48vh;
+	}
+}
+
+@media (max-height: 700px) {
+	.hero {
+		margin-top: 42vh;
+	}
+}
+
+@media (max-height: 600px) {
+	.hero {
+		margin-top: 35vh;
 	}
 }

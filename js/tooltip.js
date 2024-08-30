@@ -3,37 +3,29 @@ document.querySelectorAll('.tooltip-container').forEach(function (container) {
 	const tooltipIcon = container.querySelector('.tooltip-icon')
 	const tooltipImage = container.querySelector('.tooltip-image')
 
-	tooltipIcon.addEventListener('mouseover', function () {
+	tooltipIcon.addEventListener('click', function () {
+		const isTooltipVisible = tooltip.style.display === 'block'
+
+		// Скрыть или показать tooltip и изображение
+		tooltip.style.display = isTooltipVisible ? 'none' : 'block'
+		tooltipImage.style.display = isTooltipVisible ? 'none' : 'block'
+	})
+
+	// Клик на tooltip не будет скрывать его
+	tooltip.addEventListener('click', function () {
 		tooltip.style.display = 'block'
 		tooltipImage.style.display = 'block'
 	})
 
-	tooltipIcon.addEventListener('mouseout', function (event) {
-		if (!tooltip.contains(event.relatedTarget) && !tooltipImage.contains(event.relatedTarget)) {
-			tooltip.style.display = 'none'
-			tooltipImage.style.display = 'none'
-		}
-	})
-
-	tooltip.addEventListener('mouseover', function () {
+	// Клик на изображение также не будет скрывать его
+	tooltipImage.addEventListener('click', function () {
 		tooltip.style.display = 'block'
 		tooltipImage.style.display = 'block'
 	})
 
-	tooltip.addEventListener('mouseout', function (event) {
-		if (!tooltipIcon.contains(event.relatedTarget) && !tooltipImage.contains(event.relatedTarget)) {
-			tooltip.style.display = 'none'
-			tooltipImage.style.display = 'none'
-		}
-	})
-
-	tooltipImage.addEventListener('mouseover', function () {
-		tooltip.style.display = 'block'
-		tooltipImage.style.display = 'block'
-	})
-
-	tooltipImage.addEventListener('mouseout', function (event) {
-		if (!tooltipIcon.contains(event.relatedTarget) && !tooltip.contains(event.relatedTarget)) {
+	// Скрытие при клике вне контейнера
+	document.addEventListener('click', function (event) {
+		if (!container.contains(event.target)) {
 			tooltip.style.display = 'none'
 			tooltipImage.style.display = 'none'
 		}
