@@ -1,11 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
 	const tabs = document.querySelectorAll('.tab')
 	const content = document.getElementById('content')
+	const tooltipButtons = document.querySelectorAll('.tooltip-button') // Все кнопки "Подробнее"
 
 	const categories = {
 		zhk: [
 			{
-				title: '<a target="_blank" href="">Комплекты</a>',
+				title: '<a target="_blank" href="">Комплекты саморегулирующегося кабеля</a>',
 				image2: '../img/line-card.svg',
 				description:
 					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-10htm2-ct-v-trubu-10m-100vt-rexant-10700/">Артикул: </a><span>51-0605</span><br>' +
@@ -35,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					'<button data-fancybox="gallery" href="img/scheme6.webp" class="card-btn">Показать схему</a>'
 			},
 			{
-				title: '<a target="_blank" href="">Бухты</a>',
+				title: '<a target="_blank" href="">Бухты саморегулирующегося кабеля</a>',
 				image2: '../img/line-card.svg',
 				description:
 					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-10htm2-ct-pischevoy-10vt-m-buhta-100m-rexant-13480/">Артикул: </a><span>51-0632</span><br>' +
@@ -46,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 			},
 			{
-				title: '<a target="_blank" href="">Мини-бухты</a>',
+				title: '<a target="_blank" href="">Комплекты саморегулирующегося кабеля резистивного кабеля саморегулирующегося кабеля</a>',
 				image2: '../img/line-card.svg',
 				description:
 					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-10htm2-ct-v-trubu-10m-100vt-rexant-10700/">Артикул: </a><span>51-0605</span><br>' +
@@ -59,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		],
 		soc: [
 			{
-				title: '<a target="_blank" href="">Комплекты</a>',
+				title: '<a target="_blank" href="">Комплекты саморегулирующегося кабеля</a>',
 				image2: '../img/line-card.svg',
 				description:
 					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-15msr-pb-na-trubu-10m-150vt-rexant-11997/">Артикул: </a><span>51-0620</span><br>' +
@@ -124,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					'<button data-fancybox="gallery" href="img/scheme5.webp" class="card-btn">Показать схему</a>'
 			},
 			{
-				title: '<a target="_blank" href="">Бухты</a>',
+				title: '<a target="_blank" href="">Бухты саморегулирующегося кабеля</a>',
 				image2: '../img/line-card.svg',
 				description:
 					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-nagrevatelniy-samoreguliruyuschiysya-srl16-2-neekranirovanniy-16vt-m-0-88mm2-105m-300m-rexant-30975/">Артикул: </a><span>51-0274</span><br>' +
@@ -146,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				// 
 			},
 			{
-				title: '<a target="_blank" href="">Мини-бухты</a>',
+				title: '<a target="_blank" href="">Комплекты саморегулирующегося кабеля резистивного кабеля саморегулирующегося кабеля</a>',
 				image2: '../img/line-card.svg',
 				description:
 					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-srl16-2cr-ekranirovanniy-16vt-m-100m-rexant-20260/">Артикул: </a><span>51-0204</span><br>' +
@@ -168,51 +169,48 @@ document.addEventListener('DOMContentLoaded', () => {
 		],
 		provider: [
 			{
-				title: '<a target="_blank" href="">Комплекты</a>',
+				title: '<a target="_blank" href="">Комплекты саморегулирующегося кабеля</a>',
 				image2: '../img/line-card.svg',
 				description:
-					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-power-line-30srl-2cr-10m-300vt-rexant-17576/">Артикул: </a><span>51-0657</span><br>' +
-					'<a target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-power-line-30srl-2cr-10m-300vt-rexant-17576/">Кабель греющий саморегулирующийся POWER Line 30SRL-2CR, 10м/300Вт REXANT</a><br>' +
+					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-extra-line-25msr-pb-na-trubu-2m-50vt-rexant-17490/">Артикул: </a><span>51-0637</span><br>' +
+					'<a target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-extra-line-25msr-pb-na-trubu-2m-50vt-rexant-17490/">Кабель греющий саморегулирующийся Extra Line 25MSR-PB, на трубу, 2м/50Вт REXANT</a><br>' +
 					//
-					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-power-line-30srl-2cr-15m-450vt-rexant-17575/">Артикул: </a><span>51-0658</span><br>' +
-					'<a target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-power-line-30srl-2cr-15m-450vt-rexant-17575/">Кабель греющий саморегулирующийся POWER Line 30SRL-2CR, 15м/450Вт REXANT</a><br>' +
+					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-extra-line-25msr-pb-na-trubu-3m-75vt-rexant-17491/">Артикул: </a><span>51-0638</span><br>' +
+					'<a target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-extra-line-25msr-pb-na-trubu-3m-75vt-rexant-17491/">Кабель греющий саморегулирующийся Extra Line 25MSR-PB, на трубу, 3м/75Вт REXANT</a > <br>' +
 					//
-					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-power-line-30srl-2cr-20m-600vt-rexant-17574/">Артикул: </a><span>51-0659</span><br>' +
-					'<a target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-power-line-30srl-2cr-20m-600vt-rexant-17574/">Кабель греющий саморегулирующийся POWER Line 30SRL-2CR, 20м/600Вт REXANT</a><br>' +
+					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-extra-line-25msr-pb-na-trubu-4m-100vt-rexant-17488/">Артикул: </a><span>51-0639</span><br>' +
+					'<a target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-extra-line-25msr-pb-na-trubu-4m-100vt-rexant-17488/">Кабель греющий саморегулирующийся Extra Line 25MSR-PB, на трубу, 4м/100Вт REXANT</a > <br>' +
 					//
-					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-power-line-30srl-2cr-25m-750vt-rexant-17571/">Артикул: </a><span>51-0660</span><br>' +
-					'<a target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-power-line-30srl-2cr-25m-750vt-rexant-17571/">Кабель греющий саморегулирующийся POWER Line 30SRL-2CR, 25м/750Вт REXANT</a><br>' +
+					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-extra-line-25msr-pb-na-trubu-5m-125vt-rexant-17487/">Артикул: </a><span>51-0640</span><br>' +
+					'<a target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-extra-line-25msr-pb-na-trubu-5m-125vt-rexant-17487/">Кабель греющий саморегулирующийся Extra Line 25MSR-PB, на трубу, 5м/125Вт REXANT</a > <br>' +
 					//
-					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-power-line-30srl-2cr-2m-60vt-rexant-17565/">Артикул: </a><span>51-0649</span><br>' +
-					'<a target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-power-line-30srl-2cr-2m-60vt-rexant-17565/">Кабель греющий саморегулирующийся POWER Line 30SRL-2CR, 2м/60Вт REXANT</a><br>' +
+					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-extra-line-25msr-pb-na-trubu-6m-150vt-rexant-17485/">Артикул: </a><span>51-0641</span><br>' +
+					'<a target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-extra-line-25msr-pb-na-trubu-6m-150vt-rexant-17485/">Кабель греющий саморегулирующийся Extra Line 25MSR-PB, на трубу, 6м/150Вт REXANT</a > <br>' +
 					//
-					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-power-line-30srl-2cr-3m-90vt-rexant-17570/">Артикул: </a><span>51-0650</span><br>' +
-					'<a target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-power-line-30srl-2cr-3m-90vt-rexant-17570/">Кабель греющий саморегулирующийся POWER Line 30SRL-2CR, 3м/90Вт REXANT</a><br>' +
+					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-extra-line-25msr-pb-na-trubu-7m-175vt-rexant-17483/">Артикул: </a><span>51-0642</span><br>' +
+					'<a target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-extra-line-25msr-pb-na-trubu-7m-175vt-rexant-17483/">Кабель греющий саморегулирующийся Extra Line 25MSR-PB, на трубу, 7м/175Вт REXANT</a><br>' +
 					//
-					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-power-line-30srl-2cr-4m-120vt-rexant-17566/">Артикул: </a><span>51-0651</span><br>' +
-					'<a target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-power-line-30srl-2cr-4m-120vt-rexant-17566/">Кабель греющий саморегулирующийся POWER Line 30SRL-2CR, 4м/120Вт REXANT</a><br>' +
+					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-extra-line-25msr-pb-na-trubu-8m-200vt-rexant-17486/">Артикул: </a><span>51-0643</span><br>' +
+					'<a target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-extra-line-25msr-pb-na-trubu-8m-200vt-rexant-17486/">Кабель греющий саморегулирующийся Extra Line 25MSR-PB, на трубу, 8м/200Вт REXANT</a > <br>' +
 					//
-					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-power-line-30srl-2cr-5m-150vt-rexant-17572/">Артикул: </a><span>51-0652</span><br>' +
-					'<a target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-power-line-30srl-2cr-5m-150vt-rexant-17572/">Кабель греющий саморегулирующийся POWER Line 30SRL-2CR, 5м/150Вт REXANT</a><br>' +
+					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-extra-line-25msr-pb-na-trubu-10m-250vt-rexant-17489/">Артикул: </a><span>51-0645</span><br>' +
+					'<a target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-extra-line-25msr-pb-na-trubu-10m-250vt-rexant-17489/">Кабель греющий саморегулирующийся Extra Line 25MSR-PB, на трубу, 10м/250Вт REXANT</a><br>' +
 					//
-					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-power-line-30srl-2cr-6m-180vt-rexant-17568/">Артикул: </a><span>51-0653</span><br>' +
-					'<a target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-power-line-30srl-2cr-6m-180vt-rexant-17568/">Кабель греющий саморегулирующийся POWER Line 30SRL-2CR, 6м/180Вт REXANT</a><br>' +
+					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-extra-line-25msr-pb-na-trubu-15m-375vt-rexant-17484/">Артикул: </a><span>51-0646</span><br>' +
+					'<a target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-extra-line-25msr-pb-na-trubu-15m-375vt-rexant-17484/">Кабель греющий саморегулирующийся Extra Line 25MSR-PB, на трубу, 15м/375Вт REXANT</a > <br>' +
 					//
-					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-power-line-30srl-2cr-7m-210vt-rexant-17573/">Артикул: </a><span>51-0654</span><br>' +
-					'<a target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-power-line-30srl-2cr-7m-210vt-rexant-17573/">Кабель греющий саморегулирующийся POWER Line 30SRL-2CR, 7м/210Вт REXANT</a><br>' +
+					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-extra-line-25msr-pb-na-trubu-20m-500vt-rexant-17481/">Артикул: </a><span>51-0647</span><br>' +
+					'<a target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-extra-line-25msr-pb-na-trubu-20m-500vt-rexant-17481/">Кабель греющий саморегулирующийся Extra Line 25MSR-PB, на трубу, 20м/500Вт REXANT</a><br>' +
 					//
-					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-power-line-30srl-2cr-8m-240vt-rexant-17569/">Артикул: </a><span>51-0655</span><br>' +
-					'<a target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-power-line-30srl-2cr-8m-240vt-rexant-17569/">Кабель греющий саморегулирующийся POWER Line 30SRL-2CR, 8м/240Вт REXANT</a><br>' +
-					//
-					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-power-line-30srl-2cr-9m-270vt-rexant-17567/">Артикул: </a><span>51-0656</span><br>' +
-					'<a target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-power-line-30srl-2cr-9m-270vt-rexant-17567/">Кабель греющий саморегулирующийся POWER Line 30SRL-2CR, 9м/270Вт REXANT</a><br>',
+					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-extra-line-25msr-pb-na-trubu-25m-625vt-rexant-17482/">Артикул: </a><span>51-0648</span><br>' +
+					'<a target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-extra-line-25msr-pb-na-trubu-25m-625vt-rexant-17482/">Кабель греющий саморегулирующийся Extra Line 25MSR-PB, на трубу, 25м/625Вт REXANT</a><br>',
 				button:
 					'<button data-fancybox="gallery" href="img/scheme3.webp" class="card-btn">Показать схему</a>'
 
 				//
 			},
 			{
-				title: '<a target="_blank" href="">Бухты</a>',
+				title: '<a target="_blank" href="">Бухты саморегулирующегося кабеля</a>',
 				image2: '../img/line-card.svg',
 				description:
 					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-dlya-trub-vodostokov-krish-30kns-2lp-el-65-85-30vt-m-uv-200m-ekranirovanniy-rexant-28752/">Артикул: </a><span>51-0254</span><br>' +
@@ -235,7 +233,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		// 
 		industrial: [
 			{
-				title: '<a target="_blank" href="">Комплекты</a>',
+				title: '<a target="_blank" href="">Комплекты саморегулирующегося кабеля</a>',
 				image2: '../img/line-card.svg',
 				description:
 					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-power-line-30srl-2cr-10m-300vt-rexant-17576/">Артикул: </a><span>51-0657</span><br>' +
@@ -279,7 +277,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				//
 			},
 			{
-				title: '<a target="_blank" href="">Бухты</a>',
+				title: '<a target="_blank" href="">Бухты саморегулирующегося кабеля</a>',
 				image2: '../img/line-card.svg',
 				description:
 					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-dlya-trub-vodostokov-krish-30kns-2lp-el-65-85-30vt-m-uv-200m-ekranirovanniy-rexant-28752/">Артикул: </a><span>51-0254</span><br>' +
@@ -302,7 +300,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		// 
 		admin: [
 			{
-				title: '<a target="_blank" href="">Комплекты</a>',
+				title: '<a target="_blank" href="">Комплекты саморегулирующегося кабеля</a>',
 				image2: '../img/line-card.svg',
 				description:
 					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-dlya-obogreva-krovli-vodostokov-ploschadok-stupeney-grk-30-1080-36-36m-rexant-28601/">Артикул: </a><span>51-0065</span><br>' +
@@ -348,9 +346,40 @@ document.addEventListener('DOMContentLoaded', () => {
 
 			}
 		],
+
+		// 
+		industry: [
+			{
+				title: '<a target="_blank" href="">Комплекты саморегулирующегося кабеля</a>',
+				image2: '../img/line-card.svg',
+				description:
+					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-16kns-2ltg-el-65-85-ekranirovanniy-vzrivozaschischenniy-ex-uv-16vt-m-200m-rexant-28738/">Артикул: </a><span>51-0250</span><br>' +
+					'<a target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-16kns-2ltg-el-65-85-ekranirovanniy-vzrivozaschischenniy-ex-uv-16vt-m-200m-rexant-28738/">Кабель греющий саморегулирующийся 16КНС 2ЛТГ-ЭЛ-65/85, экранированный, взрывозащищенный, Ex, UV, 16Вт/м, 200м </a><br>' +
+					// 
+					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-24kns-2ltg-el-65-85-ekranirovanniy-vzrivozaschischenniy-ex-uv-24vt-m-200m-rexant-28739/">Артикул: </a><span>51-0251</span><br>' +
+					'<a target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-24kns-2ltg-el-65-85-ekranirovanniy-vzrivozaschischenniy-ex-uv-24vt-m-200m-rexant-28739/">Кабель греющий саморегулирующийся 24КНС 2ЛТГ-ЭЛ-65/85 экранированный, взрывозащищенный, Ex, UV, 24Вт/м, 200м </a><br>' +
+					// 
+					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-30kns-2ltg-el-65-85-ekranirovanniy-vzrivozaschischenniy-ex-uv-30vt-m-200m-rexant-28740/">Артикул: </a><span>51-0252</span><br>' +
+					'<a target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-30kns-2ltg-el-65-85-ekranirovanniy-vzrivozaschischenniy-ex-uv-30vt-m-200m-rexant-28740/">Кабель греющий саморегулирующийся 30КНС 2ЛТГ-ЭЛ-65/85 экранированный, взрывозащищенный, Ex, UV, 30Вт/м, 200м </a><br>' +
+					// 
+					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-40kns-2ltg-el-65-85-ekranirovanniy-vzrivozaschischenniy-ex-uv-40vt-m-200m-rexant-28741/">Артикул: </a><span>51-0253</span><br>' +
+					'<a target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-40kns-2ltg-el-65-85-ekranirovanniy-vzrivozaschischenniy-ex-uv-40vt-m-200m-rexant-28741/">Кабель греющий саморегулирующийся 40КНС 2ЛТГ-ЭЛ-65/85 экранированный, взрывозащищенный, Ex, UV, 40Вт/м, 200м </a><br>' +
+					// 
+					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-dlya-trub-vodostokov-krish-30kns-2lp-el-65-85-30vt-m-uv-200m-ekranirovanniy-rexant-28752/">Артикул: </a><span>51-0254</span><br>' +
+					'<a target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-dlya-trub-vodostokov-krish-30kns-2lp-el-65-85-30vt-m-uv-200m-ekranirovanniy-rexant-28752/">Кабель греющий саморегулирующийся для труб, водостоков, крыш 30КНС 2ЛП-ЭЛ-65/85, 30Вт/м, UV, 200м, экранированный REXANT</a><br>' +
+					// 
+					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-dlya-trub-vodostokov-krish-40kns-2lp-el-65-85-40vt-m-uv-200m-ekranirovanniy-rexant-28753/">Артикул: </a><span>51-0255</span><br>' +
+					'<a target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-samoreguliruyuschiysya-dlya-trub-vodostokov-krish-40kns-2lp-el-65-85-40vt-m-uv-200m-ekranirovanniy-rexant-28753/">Кабель греющий саморегулирующийся для труб, водостоков, крыш 40КНС 2ЛП-ЭЛd-65/85, 40Вт/м, UV, 200м, экранированный REXANT</a><br>',
+				// 
+				button:
+					'<button data-fancybox="gallery" href="img/scheme5.webp" class="card-btn">Показать схему</a>'
+			},
+		],
+		// 
+
 		plochadki: [
 			{
-				title: '<a target="_blank" href="">Комплекты</a>',
+				title: '<a target="_blank" href="">Комплекты саморегулирующегося кабеля</a>',
 				image2: '../img/line-card.svg',
 				description:
 					'<li target="_blank" href="https://www.sds-group.ru/product/kabel-greyuschiy-dlya-progreva-betona-20vt-m-60m-rexant-29313/">Артикул: </a><span>51-0093</span><br>' +
@@ -386,28 +415,44 @@ document.addEventListener('DOMContentLoaded', () => {
 		],
 	}
 
+	// Обработчик для вкладок
 	tabs.forEach(tab => {
 		tab.addEventListener('click', () => {
 			tabs.forEach(t => t.classList.remove('active'))
 			tab.classList.add('active')
 
 			const category = tab.getAttribute('data-category')
-			const items = categories[category]
+			const items = categories[category] || []
 
 			content.innerHTML = items.map(item => `
 			<div class="card">
-					<div class="card-content">
-							<h3>${item.title}</h3>
-							<img src="${item.image2}" class="card-line">
-							<div class="card-group-wrap">
-								<div class="card-group">
-									<div class="card-description">${item.description}</div>
-								</div>
-							</div>
-							<button>${item.button}</button>
+				<div class="card-content">
+					<h3>${item.title}</h3>
+					<img src="${item.image2}" class="card-line">
+					<div class="card-group-wrap">
+						<div class="card-group">
+							<div class="card-description">${item.description}</div>
+						</div>
 					</div>
+					${item.button}
+				</div>
 			</div>
-	`).join('')
+		`).join('')
+		})
+	})
+
+	// Обработчик для кнопок "Подробнее"
+	tooltipButtons.forEach(button => {
+		button.addEventListener('click', () => {
+			const targetTab = button.getAttribute('data-target-tab')
+			const targetTabElement = document.querySelector(`.tab[data-category="${targetTab}"]`)
+
+			if (targetTabElement) {
+				targetTabElement.click() // Программный клик на нужную вкладку
+
+				// Плавный скролл к секции с вкладками
+				document.querySelector('.tabs').scrollIntoView({ behavior: 'smooth' })
+			}
 		})
 	})
 

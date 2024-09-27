@@ -63,7 +63,7 @@
 						экологично и экономно</p>
 				</div>
 				<div class="hero__btn-group">
-					<button href='#' class="hero-btn">Получить предложение</button>
+					<button data-fancybox data-src="#modal-offer" href='#' class="hero-btn">Получить предложение</button>
 					<a data-fancybox data-small-btn="true" class='hero-btn-play' href="video/video.mp4">
 					</a>
 					<video width="200" height="320" controls id="myVideo" style="display:none;">
@@ -73,27 +73,27 @@
 				<div class="tooltip-container tooltip-wrap-1">
 					<div class="tooltip">
 						<p>Скопление снега <br> и обледенение кровли<br> домов, карнизах, ендовах</p>
-						<button href="#section1" class="tooltip-button">Подробнее</button>
+						<button href="#section1" class="tooltip-button" data-target-tab="admin">Подробнее</button>
 					</div>
 					<div class="tooltip-icon">
 						<img src="./img/plus.svg" alt="plus:svg">
-						<img class="tooltip-image" src="img/krovlya.webp" alt="tooltip image">
+						<img class="tooltip-image" src="img/image-a.webp" alt="tooltip image">
 					</div>
 				</div>
 				<div class="tooltip-container tooltip-wrap-2">
 					<div class="tooltip">
 						<p>Предотвращение обледенения <br>открытой площадки</p>
-						<button class="tooltip-button">Подробнее</button>
+						<button href="#section1" class="tooltip-button" data-target-tab="plochadki">Подробнее</button>
 					</div>
 					<div class="tooltip-icon">
 						<img src="./img/plus.svg" alt="plus:svg">
-						<img class="tooltip-image" src="img/krovlya.webp" alt="tooltip image">
+						<img class="tooltip-image" src="img/image-a.webp" alt="tooltip image">
 					</div>
 				</div>
 				<div class="tooltip-container tooltip-wrap-3">
 					<div class="tooltip">
 						<p>Примерзание труб <br> водопроводов с питьевой<br> и канализационной водой</p>
-						<button class="tooltip-button">Подробнее</button>
+						<button href="#section1" class="tooltip-button" data-target-tab="zhk">Подробнее</button>
 					</div>
 					<div class="tooltip-icon">
 						<img src="./img/plus.svg" alt="plus:svg">
@@ -103,7 +103,7 @@
 				<div class="tooltip-container tooltip-wrap-4">
 					<div class="tooltip">
 						<p>Образование наледи на лестницах и входных группах, пандусах</p>
-						<button class="tooltip-button">Подробнее</button>
+						<button href="#section1" class="tooltip-button" data-target-tab="plochadki">Подробнее</button>
 					</div>
 					<div class="tooltip-icon">
 						<img src="./img/plus.svg" alt="plus:svg">
@@ -127,7 +127,7 @@
 						экологично и экономно</p>
 				</div>
 				<div class="hero__btn-group">
-					<button href='#' class="hero-btn">Получить предложение</button>
+					<button data-fancybox data-src="#modal-offer" href='#' class="hero-btn">Получить предложение</button>
 					<a data-fancybox data-small-btn="true" class='hero-btn-play' href="video/video.mp4">
 					</a>
 					<video width="200" height="320" controls id="myVideo" style="display:none;">
@@ -137,7 +137,7 @@
 				<div class="tooltip-container tooltip-wrap-6">
 					<div class="tooltip tooltip-slide2">
 						<p>Предотвращение схода снега, образования наледи и падения кусков льда и сосулек</p>
-						<button class="tooltip-button tooltip-slide2-btn">Подробнее</button>
+						<button class="tooltip-button tooltip-slide2-btn" data-target-tab="industry">Подробнее</button>
 					</div>
 					<div class="tooltip-icon">
 						<img src="./img/plus.svg" alt="plus:svg">
@@ -147,7 +147,8 @@
 				<div class="tooltip-container tooltip-wrap-7">
 					<div id='special-tooltip' class="tooltip tooltip-slide2">
 						<p>Сохранение технологичности рабочих жидкостей и газов</p>
-						<button id='special-btn' class="tooltip-button tooltip-slide2-btn">Подробнее</button>
+						<button id='special-btn' class="tooltip-button tooltip-slide2-btn"
+							data-target-tab="industry">Подробнее</button>
 					</div>
 					<div class="tooltip-icon">
 						<img src="./img/plus.svg" alt="plus:svg">
@@ -157,17 +158,8 @@
 				<div class="tooltip-container tooltip-wrap-8">
 					<div id='special-tooltip' class="tooltip tooltip-slide2">
 						<p>Безопасность людей при спуске и подъеме по лестнице</p>
-						<button id='special-btn' class="tooltip-button tooltip-slide2-btn">Подробнее</button>
-					</div>
-					<div class="tooltip-icon">
-						<img src="./img/plus.svg" alt="plus:svg">
-						<img class="tooltip-image" src="img/image-a.webp" alt="tooltip image">
-					</div>
-				</div>
-				<div class="tooltip-container tooltip-wrap-9">
-					<div class="tooltip tooltip-slide2">
-						<p>Безопасность людей при спуске и подъеме по лестнице</p>
-						<button class="tooltip-button tooltip-slide2-btn">Подробнее</button>
+						<button id='special-btn' class="tooltip-button tooltip-slide2-btn"
+							data-target-tab="plochadki">Подробнее</button>
 					</div>
 					<div class="tooltip-icon">
 						<img src="./img/plus.svg" alt="plus:svg">
@@ -189,6 +181,7 @@
 			<button class="tab" data-category="provider">Водостоки</button>
 			<button class="tab" data-category="industrial">Крыша</button>
 			<button class="tab" data-category="admin">Кровля</button>
+			<button class="tab" data-category="industry">Промышленность</button>
 			<button class="tab" id='last-tab' data-category="plochadki">Площадки</button>
 		</div>
 		<div class="content" id="content">
@@ -1585,63 +1578,58 @@
 			</div>
 
 			<!-- Модальное окно -->
-			<form action="https://formspree.io/f/mjkblekr" method="POST">
-				<div class="modal">
-					<div class="modal-content">
-						<a class="close-button"><img src="img/close.svg" alt="close"></a>
-						<h2>Заявка на получения предложения</h2>
-						<form>
-							<div class="input-group">
-								<label>
-									<span class="icon"><img src="img/user.svg" alt="user"></span>
-									<input required='required' type="text" name='name' placeholder="Введите Представитель">
-								</label>
-							</div>
-							<div class="input-group">
-								<label>
-									<span class="icon"><img src="img/phone-2.svg" alt="phone"></span>
-									<input required='required' id='maskPhone' name='phone' class='tel' type="text"
-										placeholder="+7 (___) ___-__-__">
-								</label>
-							</div>
-							<div class="input-group">
-								<label>
-									<span class="icon"><img src="img/email.svg" alt="email"></span>
-									<input required='required' type="email" name='email' placeholder="Эллектронная почта">
-								</label>
-							</div>
-							<div class="checkbox-group">
-								<span>Я согласен на обработку<br> <a target='_blank'
-										href='https://www.sds-group.ru/protection-personal-information/'>персональных данных</a></span>
-								<label class="checkbox">
-									<input required='required' name='checkbox' type="checkbox" />
-									<svg viewBox="0 0 21 18">
-										<symbol id="tick-path" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg">
-											<path d="M5.22003 7.26C5.72003 7.76 7.57 9.7 8.67 11.45C12.2 6.05 15.65 3.5 19.19 1.69"
-												fill="none" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" />
-										</symbol>
-										<defs>
-											<mask id="tick">
-												<use class="tick mask" href="#tick-path" />
-											</mask>
-										</defs>
-										<use class="tick" href="#tick-path" stroke="currentColor" />
-										<path fill="white" mask="url(#tick)"
-											d="M18 9C18 10.4464 17.9036 11.8929 17.7589 13.1464C17.5179 15.6054 15.6054 17.5179 13.1625 17.7589C11.8929 17.9036 10.4464 18 9 18C7.55357 18 6.10714 17.9036 4.85357 17.7589C2.39464 17.5179 0.498214 15.6054 0.241071 13.1464C0.0964286 11.8929 0 10.4464 0 9C0 7.55357 0.0964286 6.10714 0.241071 4.8375C0.498214 2.39464 2.39464 0.482143 4.85357 0.241071C6.10714 0.0964286 7.55357 0 9 0C10.4464 0 11.8929 0.0964286 13.1625 0.241071C15.6054 0.482143 17.5179 2.39464 17.7589 4.8375C17.9036 6.10714 18 7.55357 18 9Z" />
-									</svg>
-									<svg class="lines" viewBox="0 0 11 11">
-										<path d="M5.88086 5.89441L9.53504 4.26746" />
-										<path d="M5.5274 8.78838L9.45391 9.55161" />
-										<path d="M3.49371 4.22065L5.55387 0.79198" />
-									</svg>
-								</label>
-							</div>
-							<button class='btn-form' type="submit">ОТПРАВИТЬ</button>
-						</form>
-						<p class="note">После подачи заявки с вами свяжется менеджер компании SDS</p>
-					</div>
+			<div id="modal-offer" style='background: none;' class="modal">
+				<div class="modal-content2">
+					<a class="close-button" id="closeButton">
+						<img src="img/close.svg" alt="close">
+					</a>
+					<h2>Заявка на получения предложения</h2>
+					<form action="https://formspree.io/f/mjkblekr" method="POST">
+						<div class="input-group">
+							<label>
+								<span class="icon"><img src="img/user.svg" alt="user"></span>
+								<input required='required' type="text" name='name' placeholder="Ваше имя">
+							</label>
+						</div>
+						<div class="input-group">
+							<label>
+								<span class="icon"><img src="img/phone-2.svg" alt="phone"></span>
+								<input required='required' id='maskPhone' name='phone' class='tel' type="text"
+									placeholder="+7 (___) ___-__-__">
+							</label>
+						</div>
+						<div class="input-group">
+							<label>
+								<span class="icon"><img src="img/email.svg" alt="email"></span>
+								<input required='required' type="email" name='email' placeholder="Эллектронная почта">
+							</label>
+						</div>
+						<div class="checkbox-group">
+							<span>Я согласен на обработку<br> <a target='_blank'
+									href='https://www.sds-group.ru/protection-personal-information/'>персональных данных</a></span>
+							<label class="checkbox">
+								<input required='required' name='checkbox' type="checkbox" />
+								<svg viewBox="0 0 21 18">
+									<symbol id="tick-path" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.22003 7.26C5.72003 7.76 7.57 9.7 8.67 11.45C12.2 6.05 15.65 3.5 19.19 1.69" fill="none"
+											stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" />
+									</symbol>
+									<defs>
+										<mask id="tick">
+											<use class="tick mask" href="#tick-path" />
+										</mask>
+									</defs>
+									<use class="tick" href="#tick-path" stroke="currentColor" />
+									<path fill="white" mask="url(#tick)"
+										d="M18 9C18 10.4464 17.9036 11.8929 17.7589 13.1464C17.5179 15.6054 15.6054 17.5179 13.1625 17.7589C11.8929 17.9036 10.4464 18 9 18C7.55357 18 6.10714 17.9036 4.85357 17.7589C2.39464 17.5179 0.498214 15.6054 0.241071 13.1464C0.0964286 11.8929 0 10.4464 0 9C0 7.55357 0.0964286 6.10714 0.241071 4.8375C0.498214 2.39464 2.39464 0.482143 4.85357 0.241071C6.10714 0.0964286 7.55357 0 9 0C10.4464 0 11.8929 0.0964286 13.1625 0.241071C15.6054 0.482143 17.5179 2.39464 17.7589 4.8375C17.9036 6.10714 18 7.55357 18 9Z" />
+								</svg>
+							</label>
+						</div>
+						<button class='btn-form' type="submit">ОТПРАВИТЬ</button>
+					</form>
+					<p class="note">После подачи заявки с вами свяжется менеджер компании SDS</p>
 				</div>
-			</form>
+			</div>
 			<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 			<script src='https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js'></script>
 			<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
