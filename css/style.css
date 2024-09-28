@@ -2167,6 +2167,10 @@ h2 {
 		font-size: 16px;
 	}
 
+	.question__wrap-btn {
+		padding: 18px 25px;
+	}
+
 	.modal-block h2 {
 		font-size: 22px;
 	}
@@ -2180,10 +2184,6 @@ h2 {
 @media (max-width: 376px) {
 	.partner__item__group {
 		font-size: 14px;
-	}
-
-	.question__wrap-btn {
-		padding: 18px 25px;
 	}
 
 	.partner__item-secondary,
