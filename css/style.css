@@ -457,6 +457,10 @@ body {
 	line-height: 115%;
 }
 
+.section__title span {
+	color: #369F51;
+}
+
 .section__title-partner span {
 	color: #369F51;
 }
