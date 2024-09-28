@@ -1619,9 +1619,10 @@ body {
 }
 
 .modal__wrapper-partner {
-	/* height: 400px; */
-	overflow-y: auto;
-	overflow-x: hidden;
+    max-height: 365px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 70vh;
 }
 
 .partner-tel-group {
