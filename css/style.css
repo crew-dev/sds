@@ -956,14 +956,6 @@ body {
 	transform: scale(1.02);
 }
 
-.faq-container {
-	margin: 50px auto;
-	border-radius: 8px;
-	padding: 20px;
-	z-index: 9;
-	position: relative;
-}
-
 .faq-group {
 	margin-top: 50px;
 }
@@ -2044,7 +2036,8 @@ h2 {
 
 	.section__title-partner {
 		font-size: 32px;
-		margin-top: 80px;
+		margin-top: 40px;
+		margin-bottom: 10px;
 	}
 
 	.header__social {
@@ -2122,6 +2115,21 @@ h2 {
 
 	.hero__title {
 		font-size: 42px;
+	}
+
+	.section__title {
+		font-family: 'Exo2-Semibold';
+		font-size: 50px;
+		text-align: center;
+		text-transform: uppercase;
+		color: var(--white);
+		margin-top: 80px;
+		line-height: 115%;
+	}
+
+	.section__title {
+		font-family: 'Exo2-Semibold';
+		font-size: 32px;
 	}
 
 	.fancybox-slide--html {
