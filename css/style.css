@@ -1619,10 +1619,10 @@ body {
 }
 
 .modal__wrapper-partner {
-    max-height: 365px;
-    overflow-y: auto;
-    overflow-x: hidden;
-    height: 70vh;
+	max-height: 365px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: 70vh;
 }
 
 .partner-tel-group {
@@ -2178,6 +2178,10 @@ h2 {
 		font-size: 14px;
 	}
 
+	.question__wrap-btn {
+		padding: 18px 25px;
+	}
+
 	.partner__item-secondary,
 	.partner__item-primary {
 		font-size: 14px;
@@ -2219,5 +2223,5 @@ h2 {
 .modal__wrapper-partner::-webkit-scrollbar-thumb {
 	background-color: #050c2641;
 	border-radius: 90px;
-	border: px solid #050c263d;
+	border: 0px solid #050c263d;
 }
