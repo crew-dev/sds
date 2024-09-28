@@ -1912,6 +1912,19 @@ h2 {
 		font-family: 'Exo2-Semibold';
 		font-size: 37px;
 	}
+
+	.d5-block-1 .ccol {
+		display: table-cell;
+		width: 25%;
+		margin-right: 40px;
+		vertical-align: top;
+	}
+
+	.d5-block-1 .crow {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+	}
 }
 
 @media (max-width: 680px) {
@@ -1921,19 +1934,6 @@ h2 {
 
 	.questions__wrap-info-phone-text {
 		font-size: 25px;
-	}
-
-	.d5-block-1 .ccol {
-		display: table-cell;
-		width: max-content;
-		margin-right: 40px;
-		vertical-align: top;
-	}
-
-	.d5-block-1 .crow {
-		display: flex;
-		flex-wrap: wrap;
-		width: 100%;
 	}
 
 	.custom-prev {
@@ -1973,6 +1973,13 @@ h2 {
 
 	.questions__wrap-info-email-text:nth-child(2) {
 		margin-left: 0px;
+	}
+
+	@media (max-width: 900px) {
+		.section__title {
+			font-family: 'Exo2-Semibold';
+			font-size: 37px;
+		}
 	}
 
 	.questions__container {
@@ -2094,6 +2101,19 @@ h2 {
 
 	.fancybox-slide--html {
 		padding: 15px;
+	}
+
+	.d5-block-1 .ccol {
+		display: table-cell;
+		width: 32%;
+		margin-right: 40px;
+		vertical-align: top;
+	}
+
+	.d5-block-1 .crow {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
 	}
 
 	.modal-block {
