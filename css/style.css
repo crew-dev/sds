@@ -446,7 +446,18 @@ body {
 	line-height: 115%;
 }
 
-.section__title span {
+.section__title-partner {
+	font-family: 'Exo2-Semibold';
+	font-size: 50px;
+	text-align: center;
+	text-transform: uppercase;
+	color: var(--white);
+	margin-top: 60px;
+	margin-bottom: 30px;
+	line-height: 115%;
+}
+
+.section__title-partner span {
 	color: #369F51;
 }
 
@@ -769,6 +780,11 @@ body {
 	top: -95px !important;
 	left: 25px !important;
 	position: absolute !important;
+}
+
+.partners-wrap {
+	background-color: #090c1242;
+	padding-top: 10px;
 }
 
 .program__card-img-day2,
@@ -1386,7 +1402,6 @@ body {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-bottom: 3.39vw;
-	background-color: #090c1242;
 }
 
 .d5-block-1 .crow {
@@ -1431,25 +1446,14 @@ body {
 }
 
 /* Модальное окно */
-/* .modal {
+.modal {
 	display: none;
-	justify-content: center;
-	align-items: center;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(0, 0, 0, 0.6);
-	opacity: 0;
-	transition: opacity 0.3s ease;
-	z-index: 99;
 }
 
 .modal.show {
 	display: flex;
 	opacity: 1;
-} */
+}
 
 .btn-form {
 	background: url('../img/btn-form.svg');
@@ -1526,6 +1530,14 @@ body {
 	align-items: center;
 	justify-content: space-between;
 	margin: 15px 0;
+}
+
+#partner-unique {
+	margin-bottom: 8px;
+}
+
+#partner-unique:last-child {
+	margin-bottom: 0px;
 }
 
 .partner__item img {
@@ -1610,7 +1622,7 @@ body {
 }
 
 .modal__wrapper-partner {
-	height: 400px;
+	/* height: 400px; */
 	overflow-y: auto;
 	overflow-x: hidden;
 }
@@ -1867,6 +1879,11 @@ h2 {
 		font-size: 40px;
 	}
 
+	.section__title-partner {
+		font-family: 'Exo2-Semibold';
+		font-size: 40px;
+	}
+
 	.tooltip-icon {
 		display: none;
 	}
@@ -1913,6 +1930,11 @@ h2 {
 		font-size: 37px;
 	}
 
+	.section__title-partner {
+		font-family: 'Exo2-Semibold';
+		font-size: 37px;
+	}
+
 	.d5-block-1 .ccol {
 		display: table-cell;
 		width: 25%;
@@ -1947,7 +1969,6 @@ h2 {
 		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
 		padding-bottom: 3.39vw;
-		background-color: #090c1242;
 	}
 }
 
@@ -1976,7 +1997,7 @@ h2 {
 	}
 
 	@media (max-width: 900px) {
-		.section__title {
+		.section__title-partner {
 			font-family: 'Exo2-Semibold';
 			font-size: 37px;
 		}
@@ -2017,7 +2038,7 @@ h2 {
 		display: none;
 	}
 
-	.section__title {
+	.section__title-partner {
 		font-size: 32px;
 		margin-top: 80px;
 	}
@@ -2134,12 +2155,17 @@ h2 {
 
 	.modal-block {
 		max-width: 5vw !important;
-		min-width: 85vw !important;
+		min-width: 90vw !important;
 	}
 }
 
 @media (max-width: 376px) {
 	.partner__item__group {
+		font-size: 14px;
+	}
+
+	.partner__item-secondary,
+	.partner__item-primary {
 		font-size: 14px;
 	}
 }
